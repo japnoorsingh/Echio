@@ -1,0 +1,123 @@
+.ech__Influencer {
+    display: flex;
+    flex-direction: column;
+
+    padding: 2rem;
+    background: var(--color-footer);
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 30% -100%, #042c54 25%, rgba(4, 44, 84, 1) 85%, rgba(27, 120, 222, 1) 100%);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.ech__Influencer-Brands {
+    display: flex;
+}
+
+/* Customizing Brands component as per needs */
+.ech__Influencer-Brands .gpt3__Brandss-container__Brands {
+    margin: 0;
+}
+
+/* Customizing Brands component as per needs */
+.ech__Influencer-Brands .gpt3__Brandss-container_Brands-text {
+    max-width: 700px;
+}
+
+.ech__Influencer-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 4rem 0 2rem;
+}
+
+.ech__Influencer-heading h1 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    max-width: 510px;
+}
+
+.ech__Influencer-heading p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--color-subtext);
+    cursor: pointer;
+}
+
+.ech__Influencer-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    margin-top: 2rem;
+}
+
+/* Customizing Brands component as per needs */
+.ech__Influencer-container .gpt3__Brandss-container__Brands {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+/* Customizing Brands component as per needs */
+.ech__Influencer-container .gpt3__Brandss-container_Brands-text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .ech__Influencer-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+    .ech__Influencer-heading p {
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing Brands component as per needs */
+    .ech__Influencer-Brands .gpt3__Brandss-container__Brands {
+        flex-direction: column;
+    }
+
+    /* Customizing Brands component as per needs */
+    .ech__Influencer-Brands .gpt3__Brandss-container_Brands-text {
+        margin-top: 0.5rem;
+    }
+
+    .ech__Influencer-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing Brands component as per needs */
+    .ech__Influencer-container .gpt3__Brandss-container__Brands {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+}
