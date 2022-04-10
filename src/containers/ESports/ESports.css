@@ -20,6 +20,7 @@
 .ech__blog-container {
     display: flex;
     flex-direction: row;
+    border-radius: 12px;
 }
 
 .ech__blog-container_groupA {

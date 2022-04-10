@@ -1,5 +1,4 @@
 import React from 'react';
-import Feature from '../../components/Brands/Brands';
 import './brands.css';
 
 const featuresData = [
@@ -24,12 +23,28 @@ const featuresData = [
 const brands = () => (
   <div className="ech__features section__padding" id="features">
     <div className="ech__features-heading">
-      <h1 className="gradient__text">The Future is Now and You Just Need to Realize It. Step into Future Today. & Make it Happen.</h1>
-    </div>
-    <div className="ech__features-container">
-      {featuresData.map((item, index) => (
-        <Feature title={item.title} text={item.text} key={item.title + index} />
-      ))}
+      <h1 className="gradient__text">BRANDS</h1>
+      <div className="container">
+  <div className="scroll-wrapper">
+    <div className="orb">1</div>
+    <div className="orb red">2</div>
+    <div className="orb dark">3</div>
+    <div className="orb blue">4</div>
+    <div className="orb orange">5</div>
+    <div className="orb purple">6</div>
+    <div className="orb green">7</div>
+  </div>
+  <div className="scroll-wrapper">
+    <div className="orb">1</div>
+    <div className="orb red">2</div>
+    <div className="orb dark">3</div>
+    <div className="orb blue">4</div>
+    <div className="orb orange">5</div>
+    <div className="orb purple">6</div>
+    <div className="orb green">7</div>
+  </div>
+</div>
+
     </div>
   </div>
 );
