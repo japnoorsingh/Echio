@@ -41,6 +41,94 @@
     flex-direction: column;
 }
 
+body {
+    margin: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+    margin: 60px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding: 16px;
+    position: relative;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .container::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: linear-gradient(
+      to right,
+    );
+  }
+  
+  .orb {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background: #999;
+    display: inline-block;
+    margin: 0 30px;
+  }
+  
+  .orb:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+  
+  .red {
+    background: red;
+  }
+  .dark {
+    background: #666666;
+  }
+  .blue {
+    background: blue;
+  }
+  .orange {
+    background: orange;
+  }
+  .purple {
+    background: purple;
+  }
+  .green {
+    background: green;
+  }
+  
+  /* Animation Class */
+  .scroll-wrapper {
+    display: flex;
+    -webkit-animation: marquee 20s linear infinite;
+    animation: marquee 20s linear infinite;
+  }
+  
+  @-webkit-keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
 @media screen and (max-width: 990px) {
     .ech__features {
         flex-direction: column;

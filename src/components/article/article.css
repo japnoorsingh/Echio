@@ -5,6 +5,7 @@
     display: flex;
     flex-direction: column;
     background: var(--color-footer);
+    border-radius: 12px;
 }
 
 .ech__blog-container_article-image {
@@ -16,6 +17,7 @@
 .ech__blog-container_article-image img {
     width: 100%;
     height: 100%;
+    border-radius: 12px;
 }
 
 .ech__blog-container_article-content {

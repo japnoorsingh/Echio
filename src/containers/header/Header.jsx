@@ -11,7 +11,7 @@ import './header.css';
 const Header = () => (
   <div className="ech__header section__padding" id="home">
     <div className="ech__header-content">
-      <h1 className="gradient__text">There can only be one Hero, Let&apos;s Go </h1>
+      <h2 className="gradient__text"> ECHIO <br />There can only be one Hero, Let&apos;s Go </h2>
       <Carousel>
         <Carousel.Item>
           <img src={blog01} height="920px" width="1720px" alt="blog01"/>
